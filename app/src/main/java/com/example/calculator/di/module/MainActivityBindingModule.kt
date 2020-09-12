@@ -1,7 +1,7 @@
 package com.example.githubapp.di.module
 
-import com.example.calculator.ui.FragmentsBindingModule
-import com.example.calculator.ui.MainActivity
+import com.example.calculator.ui.main.FragmentsBindingModule
+import com.example.calculator.ui.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
