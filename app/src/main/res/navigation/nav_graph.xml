@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calculatordashboard">
+
+    <fragment
+        android:id="@+id/auth_btn"
+        android:name="com.example.calculator.ui.authentication.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/calculatordashboard"
+        android:name="com.example.calculator.ui.calculation.calculatordashboard"
+        android:label="calcuatordashboard_fragment"
+        tools:layout="@layout/calcuatordashboard_fragment" >
+        <action
+            android:id="@+id/action_calculatordashboard_to_login"
+            app:destination="@id/auth_btn" />
+    </fragment>
+</navigation>
