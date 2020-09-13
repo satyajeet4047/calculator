@@ -1,4 +1,4 @@
-package com.example.githubapp.di.module
+package com.example.calculator.di.module
 
 import com.example.calculator.ui.main.FragmentsBindingModule
 import com.example.calculator.ui.main.MainActivity
