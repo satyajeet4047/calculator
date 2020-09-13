@@ -1,4 +1,4 @@
-package com.example.githubapp.di.module
+package com.example.calculator.di.module
 
 import android.app.Application
 import android.content.Context

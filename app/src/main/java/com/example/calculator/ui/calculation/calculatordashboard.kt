@@ -8,10 +8,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.example.calculator.R
+import com.example.calculator.databinding.CalcuatordashboardFragmentBinding
 import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
 
@@ -31,9 +33,12 @@ class calculatordashboard : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.d(TAG, "onViewCreated: createview")
-        val view =  inflater.inflate(R.layout.calcuatordashboard_fragment, container, false)
 
-        return view;
+        val calculatorBinding : CalcuatordashboardFragmentBinding  = DataBindingUtil.inflate(inflater,R.layout.calcuatordashboard_fragment, container, false)
+        calculatorBinding.viewModel = viewModel
+        calculatorBinding.lifecycleOwner = viewLifecycleOwner
+        return calculatorBinding.root
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

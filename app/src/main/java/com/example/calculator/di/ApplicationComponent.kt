@@ -2,8 +2,10 @@ package com.example.calculator.di
 
 import android.app.Application
 import com.example.calculator.CalculatorApplication
+import com.example.calculator.di.module.ContextModule
+import com.example.calculator.di.module.MainActivityBindingModule
 import com.example.calculator.di.module.NetworkModule
-import com.example.githubapp.di.module.*
+import com.example.calculator.di.module.ViewModelFactoryModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
