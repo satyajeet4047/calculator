@@ -7,10 +7,10 @@ Simple calculator app to calculate as per MADS rule.
 * ViewModel - Architecture Component
 * Navigation - Architecture Component
 * Data Binding - Architecture Component
-* RxJava & RxAndroid - For asynchronous tasks
+* RxAndroid & RxJava- For asynchronous tasks
 * Dagger 2 - Dependecy injection
 * Retrofit  - Handles network calls
-* Firebase - Authentication & Dabatabse
+* Firebase - Authentication & Database operations
 
 
 #### Login Info- 
