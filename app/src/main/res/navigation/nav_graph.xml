@@ -10,14 +10,30 @@
         android:name="com.example.calculator.ui.authentication.LoginFragment"
         android:label="login_fragment"
         tools:layout="@layout/login_fragment" >
+
+
     </fragment>
     <fragment
         android:id="@+id/calculatordashboard"
-        android:name="com.example.calculator.ui.calculation.calculatordashboard"
+        android:name="com.example.calculator.ui.calculation.CalculatorFragment"
         android:label="calcuatordashboard_fragment"
         tools:layout="@layout/calcuatordashboard_fragment" >
         <action
             android:id="@+id/action_calculatordashboard_to_login"
             app:destination="@id/auth_btn" />
+        <action
+            android:id="@+id/action_calculatordashboard_to_history"
+            app:destination="@id/history"  >
+            <argument
+                android:name="historyList"
+                app:argType="com.example.calculator.data.HistoryList"
+                app:nullable="true" />
+        </action>
+
     </fragment>
+    <fragment
+        android:id="@+id/history"
+        android:name="com.example.calculator.ui.history.History"
+        android:label="history_fragment"
+        tools:layout="@layout/history_fragment" />
 </navigation>

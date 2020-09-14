@@ -1,7 +1,7 @@
 package com.example.calculator.ui.main
 
 import com.example.calculator.ui.authentication.LoginFragment
-import com.example.calculator.ui.calculation.calculatordashboard
+import com.example.calculator.ui.calculation.CalculatorFragment
 import com.example.calculator.ui.history.History
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -17,5 +17,5 @@ abstract class FragmentsBindingModule {
     abstract fun provideHistoryFragment(): History?
 
     @ContributesAndroidInjector
-    abstract fun provideCalculatorDashboardFragment(): calculatordashboard?
+    abstract fun provideCalculatorDashboardFragment(): CalculatorFragment?
 }

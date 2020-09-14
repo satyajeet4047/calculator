@@ -1,6 +1,6 @@
 package com.example.calculator
 
-import com.example.calculator.di.DaggerApplicationComponent
+import com.example.calculator.di.component.DaggerApplicationComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 

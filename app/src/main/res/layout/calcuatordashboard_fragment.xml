@@ -6,12 +6,12 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
 <data>
     <import type="android.view.View"/>
     <variable name="viewModel"
-        type="com.example.calculator.ui.calculation.CalculatordashboardViewModel"/>
+        type="com.example.calculator.ui.calculation.CalculatorViewModel"/>
 </data>
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.calculation.calculatordashboard">
+    tools:context=".ui.calculation.CalculatorFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -219,6 +219,19 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
         <Button
+            android:id="@+id/btn_history"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/history_text"
+            android:onClick="@{(view) -> viewModel.onClick(view)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_zero"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_one" />
+
+        <Button
             android:id="@+id/btn_zero"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -228,7 +241,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/op_equals"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_history"
             app:layout_constraintTop_toBottomOf="@+id/btn_two" />
 
         <Button
@@ -243,6 +256,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             app:layout_constraintEnd_toStartOf="@+id/op_addition"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btn_zero"/>
+
         <Button
             android:id="@+id/op_addition"
             android:layout_width="0dp"

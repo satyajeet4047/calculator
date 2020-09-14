@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.calculator.di.util.ViewModelKey
 import com.example.calculator.ui.authentication.LoginViewModel
-import com.example.calculator.ui.calculation.CalculatordashboardViewModel
+import com.example.calculator.ui.calculation.CalculatorViewModel
 import com.example.calculator.ui.factory.ViewModelFactory
 import com.example.calculator.ui.history.HistoryViewModel
 
@@ -23,8 +23,8 @@ abstract class ViewModelFactoryModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(CalculatordashboardViewModel::class)
-    internal abstract fun bindCalculatordashboardViewModel(calculatordashboardViewModel: CalculatordashboardViewModel) : ViewModel
+    @ViewModelKey(CalculatorViewModel::class)
+    internal abstract fun bindCalculatordashboardViewModel(calculatorViewModel: CalculatorViewModel) : ViewModel
 
 
     @Binds
