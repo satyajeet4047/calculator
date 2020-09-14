@@ -30,4 +30,6 @@
     <string name="btn_zero_text">0</string>
     <string name="op_equal_text">=</string>
     <string name="op_addition_text">+</string>
+    <string name="history_text">History</string>
+    <string name="no_history_title">No Calculation History</string>
 </resources>

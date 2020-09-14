@@ -9,5 +9,8 @@ class NetworkServiceRepository @Inject constructor(private val networkService: N
 
     fun currentUser() = networkService.currentUser()
 
+    fun uploadData(historyData: HistoryList) = networkService.uploadHistoryData(historyData)
+
+    fun getHistoryData() = networkService.getHistoryData()
 
 }
