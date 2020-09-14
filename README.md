@@ -1,13 +1,12 @@
-# covid-tracker
+# Calculator
 
 Simple calculator app to calculate as per MADS rule.
-
-
 
 #### Components Used :
 * LiveData -Architecture Component
 * ViewModel - Architecture Component
 * Navigation - Architecture Component
+* Data Binding - Architecture Component
 * RxJava & RxAndroid - For asynchronous tasks
 * Dagger 2 - Dependecy injection
 * Retrofit  - Handles network calls
